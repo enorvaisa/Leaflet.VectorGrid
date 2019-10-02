@@ -76,6 +76,10 @@ L.VectorGrid = L.GridLayer.extend({
 			renderer._features = {};
 		}
 
+		if (this.options.interactive) {
+			this._map._targets = {};
+		}
+
 		vectorTilePromise.then( function renderTile(vectorTile) {
 
 			if (vectorTile.layers && vectorTile.layers.length !== 0) {
