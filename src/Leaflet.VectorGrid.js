@@ -77,8 +77,8 @@ L.VectorGrid = L.GridLayer.extend({
 		}
 
 		if (this.options.interactive) {
-      this._map._targets = {};
-    }
+			this._map._targets = {};
+		}
 
 		vectorTilePromise.then( function renderTile(vectorTile) {
 
